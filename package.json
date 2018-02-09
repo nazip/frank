@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production node ./initializers/webpack/build.js"
+    "prd": "webpack --config ./initializers/webpack/development.js --profile --json > compilation-stats.json",
+    "stat": "webpack-bundle-analyzer compilation-stats.json  dist",
+    "dev": "webpack-dev-server --open --config ./initializers/webpack/development.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,14 +17,21 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
     "css-loader": "^0.28.9",
     "eslint": "^4.17.0",
     "eslint-plugin-destructuring": "^2.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-react": "^7.6.1",
+    "express": "^4.16.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.1",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-bundle-analyzer": "^2.10.0",
+    "webpack-dev-middleware": "^2.0.4",
+    "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
     "react": "^16.2.0",
