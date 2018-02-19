@@ -1,9 +1,5 @@
-import React from 'react';
 import  ReactDOM from 'react-dom';
-
-const App = (
-  <p>hello1</p>
-);
+import App from './App';
 
 ReactDOM.render(
   App,
