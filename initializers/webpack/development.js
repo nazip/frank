@@ -9,7 +9,7 @@ module.exports = {
   ],
   output: {
     path: path.join(process.cwd(), 'dist'),
-    // publicPath: '/', //'/assets/',
+    publicPath: '/', //'/assets/',
     filename: 'bundle.js'
   },
   module: {

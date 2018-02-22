@@ -1,15 +1,8 @@
+import Routes from './main';
+import React from 'react';
 import MainLayout from 'components/layouts/MainLayout';
-import App from 'components/RootPage';
 
-
-const Index = {
-  path: '/',
-  component: PostsContainer
-};
-
-export default  {
-  component: MainLayout,
-  childRoutes: [
-    Index
-  ]
-};
+export default
+<MainLayout>
+  <Routes/>
+</MainLayout>;

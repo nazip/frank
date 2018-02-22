@@ -6,7 +6,7 @@
   "scripts": {
     "prd": "webpack --config ./initializers/webpack/development.js --profile --json > compilation-stats.json",
     "stat": "webpack-bundle-analyzer compilation-stats.json  dist",
-    "dev": "webpack-dev-server --open --config ./initializers/webpack/development.js"
+    "dev": "webpack-dev-server --open --config ./initializers/webpack/development.js --history-api-fallback"
   },
   "author": "",
   "license": "ISC",
@@ -40,7 +40,7 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "semantic-ui-react": "^0.78.2"
   }
 }
