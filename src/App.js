@@ -4,7 +4,7 @@ import routes from 'routes';
 import 'semantic-ui/dist/semantic.min.css';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter> 
     {routes}
   </BrowserRouter>
 );

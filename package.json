@@ -30,6 +30,7 @@
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "semantic-ui": "^2.2.14",
+    "source-map-loader": "^0.2.3",
     "style-loader": "^0.20.1",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
