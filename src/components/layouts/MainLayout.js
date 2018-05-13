@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Segment, Header, Container } from 'semantic-ui-react';
- 
+
 const MainLayout = ({ children }) => (
   <Container>
     <Logo/>
